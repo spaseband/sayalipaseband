@@ -1,0 +1,690 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Sayali Paseband’s Content Hub</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray {
+	color: rgba(115, 114, 110, 1);
+	fill: rgba(115, 114, 110, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(205, 60, 58, 1);
+	fill: rgba(205, 60, 58, 1);
+}
+.highlight-default_background {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(115, 114, 110, 1);
+	fill: rgba(115, 114, 110, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(205, 60, 58, 1);
+	fill: rgba(205, 60, 58, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-default { background-color: rgba(84, 72, 49, 0.08); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1fae5434-89ad-80a8-9476-c2f437fa4fb3" class="page sans"><header><img class="page-cover-image" src="5d680b51-39c6-4524-bdf8-1d29e02641cb.jfif" style="object-position:center 50%"/><h1 class="page-title"><strong>Sayali Paseband’s Content Hub</strong></h1><p class="page-description"></p></header><div class="page-body"><div id="1fae5434-89ad-8070-8b15-c800bfa8fcbb" class="column-list"><div id="1fae5434-89ad-8072-a027-fceff06d8641" style="width:81.25%" class="column"><h1 id="1fae5434-89ad-80f2-a8a6-f7270565387b" class="">Stay updated with my latest blog posts and YouTube videos — all in one place!</h1><p id="1fae5434-89ad-80f0-80ff-f8c29f3f044e" class="">Hi, I’m <strong>Sayali Paseband</strong> — a cybersecurity expert with over a decade of experience in securing the digital world. Currently, I serve as an <strong>Advisor, Cybersecurity Engineering</strong> <strong>at Verisk</strong>, and previously contributed to global cloud security initiatives at <strong>Amazon Web Services</strong>.</p><p id="1fae5434-89ad-80a6-8ab7-ff4177bc0f8b" class="">With <strong>7+ academic degrees</strong> in cybersecurity and IT — including a <strong>Master’s in Cybersecurity Analytics</strong>, an <strong>MBA in IT Management</strong>, and a <strong>Cybersecurity Professional Certificate from Harvard University</strong> — I’ve dedicated my career to making complex security concepts accessible and actionable.</p><p id="1fae5434-89ad-802e-9704-c760c40df612" class="">I’m also a <strong>published author</strong>, <strong>YouTuber</strong>, and lifelong learner who loves sharing insights on cybersecurity, cloud, and digital resilience.</p><hr id="1fae5434-89ad-807b-a275-e696aa01aa2c"/><h3 id="1fae5434-89ad-806b-86f6-da5c4d7fc8c1" class=""><strong>🔗 Explore My Work</strong></h3><ul id="1fae5434-89ad-8025-a67d-d9c40cd750e6" class="bulleted-list"><li style="list-style-type:disc">📝 <strong>Articles &amp; Insights</strong> – Deep dives into cybersecurity trends, cloud security, and more.</li></ul><ul id="1fae5434-89ad-80a6-badf-d2968697593b" class="bulleted-list"><li style="list-style-type:disc">🎥 <strong>YouTube Videos</strong> – Conference talks and thought leadership in tech.</li></ul><ul id="1fae5434-89ad-8015-a0f2-d2bf802456f6" class="bulleted-list"><li style="list-style-type:disc">📚 <strong>Publications</strong> – Books and papers I’ve authored or contributed to.</li></ul></div><div id="1fae5434-89ad-80e1-9457-f23f1cdc03e9" style="width:18.75%" class="column"><p id="1fae5434-89ad-8049-b614-c768c97dad36" class="">
+</p><p id="1fae5434-89ad-80ed-879e-f1d90b48a80b" class="">
+</p></div></div><p id="1fae5434-89ad-809a-91e0-c5a187616126" class="">
+</p><h1 id="1fae5434-89ad-805e-8886-f8cfca48ac5b" class=""><strong>📝 Recent Publications</strong></h1><p id="1fae5434-89ad-805a-b4c6-d19a5d758db7" class="">Here are some of my recent blog posts:</p><p id="22be5434-89ad-8090-95d3-e45da5122eb2" class=""><br/><br/></p><figure id="21ee5434-89ad-8090-b5b0-ecabfeb09f7b"><a href="https://iapp.org/news/a/rebuilding-digital-trust-how-blockchain-is-making-privacy-a-default/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">IAPP</div></div><div class="bookmark-href"><img src="https://iapp.org/favicon-32x32.png" class="icon bookmark-icon"/>https://iapp.org/news/a/rebuilding-digital-trust-how-blockchain-is-making-privacy-a-default/</div></div></a></figure><figure id="1fae5434-89ad-8000-b636-cce345bd6cd0"><a href="https://cloudsecurityalliance.org/blog/2025/04/17/zero-trust-is-not-enough-evolving-cloud-security-in-2025" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Zero Trust &amp; the Evolution of Cyber Security | CSA</div><div class="bookmark-description">Zero Trust isn&#x27;t enough in 2025. Explore the next wave of cloud security with AI, XDR, decentralized identity, and adaptive trust for evolving threats.</div></div><div class="bookmark-href"><img src="https://assets.cloudsecurityalliance.org/legacy/local-cdn/global/site/android-chrome-icons/android-chrome-192x192.png" class="icon bookmark-icon"/>https://cloudsecurityalliance.org/blog/2025/04/17/zero-trust-is-not-enough-evolving-cloud-security-in-2025</div></div><img src="https://cloudsecurityalliance.org/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTIxOTQsInB1ciI6ImJsb2JfaWQifX0=--b9118d31db1b24bdd466150df403aa8e8e4a0a1b/Edge-computing-and-IoT-Security-through-zero-trust.jpg" class="bookmark-image"/></a></figure><figure id="1fae5434-89ad-80c4-bd80-c75c72aa5516"><a href="https://cloudsecurityalliance.org/blog/2024/07/23/integrating-pso-with-ai-the-future-of-adaptive-cybersecurity" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">PSO &amp; AI: The Future of Adaptive Cybersecurity | CSA</div><div class="bookmark-description">Explore a novel cybersecurity approach that blends Particle Swarm Optimization (PSO) with AI, swiftly responding to evolving attack vectors.</div></div><div class="bookmark-href"><img src="https://assets.cloudsecurityalliance.org/legacy/local-cdn/global/site/android-chrome-icons/android-chrome-192x192.png" class="icon bookmark-icon"/>https://cloudsecurityalliance.org/blog/2024/07/23/integrating-pso-with-ai-the-future-of-adaptive-cybersecurity</div></div><img src="https://cloudsecurityalliance.org/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6ODgwNSwicHVyIjoiYmxvYl9pZCJ9fQ==--ae48e1611fb06d1eb719175ed60a6be8e9e3339c/Your-Data-Is-Everywhere-Here-Are-The-Critical-Capabilities-Of-A-Modern-Data-Loss-Prevention-(DLP).jpg" class="bookmark-image"/></a></figure><figure id="1fae5434-89ad-800b-b620-c8c68909f5c3"><a href="https://cloudsecurityalliance.org/blog/2023/10/03/the-impact-of-blockchain-on-cloud-security" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">The Impact of Blockchain on Cloud Security | CSA</div><div class="bookmark-description">Blockchain emerges as a pivotal technology, bolstering defenses and transforming the digital landscape.</div></div><div class="bookmark-href"><img src="https://assets.cloudsecurityalliance.org/legacy/local-cdn/global/site/android-chrome-icons/android-chrome-192x192.png" class="icon bookmark-icon"/>https://cloudsecurityalliance.org/blog/2023/10/03/the-impact-of-blockchain-on-cloud-security</div></div><img src="https://cloudsecurityalliance.org/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzYxNCwicHVyIjoiYmxvYl9pZCJ9fQ==--7a696b8ca5f4115f75e834ac42df7fee8451fee0/An-Optimistic-Outlook-for-2022-Cloud-Security-Vulnerabilities-are-100-Preventable.jpg" class="bookmark-image"/></a></figure><figure id="1fae5434-89ad-80a7-b167-df0e83156ca6"><a href="https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-accelerating-security-maturity/introduction.html" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Crawl, walk, run: Accelerating security maturity in the AWS Cloud - AWS Prescriptive Guidance</div><div class="bookmark-description">Strategy for maturing your cloud security by using AWS best practices and cloud-native tools.</div></div><div class="bookmark-href"><img src="https://docs.aws.amazon.com/assets/images/favicon.ico" class="icon bookmark-icon"/>https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-accelerating-security-maturity/introduction.html</div></div><img src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_179x109.png" class="bookmark-image"/></a></figure><figure id="1fae5434-89ad-803b-ac3f-fa19c2a7fe42"><a href="https://medium.com/@sayalipaseband/blockchain-technology-a-paradigm-shift-in-cloud-security-b28285e33a4c" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Blockchain Technology: A Paradigm Shift in Cloud Security</div><div class="bookmark-description">The advent of cloud computing has revolutionized the way organizations manage and store data, providing unmatched flexibility and scalability. However, with this digital transformation comes a…</div></div><div class="bookmark-href"><img src="https://miro.medium.com/v2/resize:fill:304:304/10fd5c419ac61637245384e7099e131627900034828f4f386bdaa47a74eae156" class="icon bookmark-icon"/>https://medium.com/@sayalipaseband/blockchain-technology-a-paradigm-shift-in-cloud-security-b28285e33a4c</div></div><img src="https://miro.medium.com/v2/da:true/bd978bb536350a710e8efb012513429cabdc4c28700604261aeda246d0f980b7" class="bookmark-image"/></a></figure><p id="21ce5434-89ad-8058-b919-e9cd378f2742" class="">
+</p><p id="1fae5434-89ad-801f-9c1d-de8e67ff6fa3" class=""><strong>Mentions &amp; Quotes:</strong></p><p id="21ce5434-89ad-8012-83ac-fe37efc07ed7" class=""><a href="https://smythos.com/managers/ops/autonomous-agents-in-cybersecurity/">https://smythos.com/managers/ops/autonomous-agents-in-cybersecurity/</a></p><blockquote id="21ce5434-89ad-80a4-b58d-f56b73b66535" class=""><em>AI-enhanced PSO algorithms significantly enhance the capability to detect and respond to emerging threats in real-time. When anomalies are detected, PSO adjusts parameters dynamically, such as thresholds for alert triggers or rules for anomaly classification.</em></blockquote><h1 id="1fae5434-89ad-8088-826c-ca0330b712ff" class=""><strong>🎥 YouTube Videos</strong></h1><p id="1fae5434-89ad-8099-8b76-eafc5a87822b" class="">Watch my latest videos:</p><figure id="200e5434-89ad-8012-b606-f1347365a541"><div class="source"><a href="https://youtu.be/lifcjgHw4e4?si=9q8sm8LM1gCq08t1">https://youtu.be/lifcjgHw4e4?si=9q8sm8LM1gCq08t1</a></div></figure><figure id="1fae5434-89ad-8084-93dc-f677f2efa94f"><div class="source"><a href="https://www.youtube.com/watch?v=AHt5X6N_D6E&amp;t=282s">https://www.youtube.com/watch?v=AHt5X6N_D6E&amp;t=282s</a></div></figure><figure id="1fae5434-89ad-80b1-919f-c5c10c50ff38"><div class="source"><a href="https://www.youtube.com/watch?v=il5ZAF1oT8A&amp;t=1713s">https://www.youtube.com/watch?v=il5ZAF1oT8A&amp;t=1713s</a></div></figure><p id="1fae5434-89ad-807f-bbb0-d45cec613254" class="">
+</p><h1 id="1fae5434-89ad-8093-be7c-cbc759fc206c" class=""><strong>🎤 Conference Talks &amp; Speaking Engagements</strong></h1><p id="1fae5434-89ad-80ec-8515-e28d0a190f49" class="">Here are some of the conferences and events where I’ve had the privilege to speak:</p><div><blockquote id="1fae5434-89ad-806a-befb-ffb4b3b3fbc5" class=""><strong><a href="https://www.technosecurity.us/east/conference-program/2024-program/june-6-2024">Techno Security and Digital Forensics Conference 2024</a></strong><strong><br/>June 2024 Wilmington, North Carolina, United States<br/></strong></blockquote></div><div><blockquote id="1fae5434-89ad-807b-b137-e3bfe595e026" class=""><strong><a href="https://www.bsidescache.org/">BSidesCache</a></strong><strong><br/>September 2024 Logan, Utah, United States<br/></strong></blockquote></div><div><blockquote id="1fae5434-89ad-80a4-ab8f-e20a5cadea77" class=""><strong><a href="https://www.sectember.ai/event/1307b260-fb76-4b3f-a134-325891adf3dc/websitePage:5b909f5e-65f8-43b1-97dd-19ea9a7435f8">CSA Global AI Symposium</a></strong><strong><br/>October 2024<br/></strong></blockquote></div><blockquote id="1fae5434-89ad-8098-aed8-e551083245e1" class=""><strong><a href="http://aprescyber.com/">Apres-Cyber Slopes Summit 2025</a></strong><strong><br/>March 2025 Park City, Utah, United States<br/></strong></blockquote><blockquote id="1fae5434-89ad-80ec-bb11-e86fb8b1852e" class=""><strong>SecjuiceCon 2025 Virtual Conference<br/><br/></strong>March 2025</blockquote><blockquote id="1fae5434-89ad-80bb-b67f-edeac0376008" class=""><strong><a href="https://slcdevopsdays.org/">Salt Lake City DevOps Days 2025</a></strong><strong><br/>May 2025 Sandy, Utah, United States<br/></strong></blockquote><p id="20ee5434-89ad-8072-9459-d27969db6b74" class="">
+</p><p id="20ee5434-89ad-8014-9505-de552009ff6e" class="">
+</p><p id="1fae5434-89ad-80d4-9772-e95b71839c5f" class="">
+</p><h1 id="1fae5434-89ad-80d6-9e75-e7097d56c230" class=""><strong>📚 Books by Sayali Paseband</strong></h1><p id="1fae5434-89ad-80bb-be5b-d5303f2da644" class="">Explore my books in poetry:<br/><br/></p><div id="1fae5434-89ad-8041-9e07-fac424ee415f" class="column-list"><div id="1fae5434-89ad-801e-8740-f0692fdff869" style="width:50.00000000000002%" class="column"><figure id="1fae5434-89ad-8077-b090-f668cc319876"><div class="source"><a href="https://www.amazon.com/Mirages-Poetry-your-Sayali-Paseband-ebook/dp/B0746QBNYZ">https://www.amazon.com/Mirages-Poetry-your-Sayali-Paseband-ebook/dp/B0746QBNYZ</a></div></figure></div><div id="1fae5434-89ad-8035-b4d8-f8a6a643b876" style="width:50%" class="column"><figure id="1fae5434-89ad-802a-980d-d5cf7faa4254"><div class="source"><a href="https://www.amazon.com/Turn-Page-Collection-Sayali-Paseband-ebook/dp/B01BYGNONI">https://www.amazon.com/Turn-Page-Collection-Sayali-Paseband-ebook/dp/B01BYGNONI</a></div></figure></div></div><p id="1fae5434-89ad-8025-99a9-c278d48b9fdf" class="">
+</p><h1 id="1fae5434-89ad-80a2-b7b5-fd46e1e76066" class=""><strong>🏆 Awards &amp; Recognitions</strong></h1><figure id="1fae5434-89ad-80cb-be3c-e15d613ee239" class="image"><a href="GRA-logo3.png"><img style="width:336px" src="GRA-logo3.png"/></a><figcaption>Global Recognition Award for Excellence in Cybersecurity 2024</figcaption></figure><p id="1fae5434-89ad-80db-8ce7-f4bc8075a185" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
